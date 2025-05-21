@@ -44,9 +44,9 @@ Créons le fichier de configuration pour la Root CA (~/pki/root-ca/openssl.cnf) 
 # OpenSSL root CA configuration file
 
 [ ca ]
-default_ca = CA_Mich
+default_ca = CA_root
 
-[ CA_Mich ]
+[ CA_root ]
 # Directory and file locations
 dir               = ~/pki/root-ca
 certs             = $dir/certs
@@ -143,9 +143,9 @@ Créons le fichier de configuration pour l'Intermediate CA (~/pki/intermediate-c
 # OpenSSL intermediate CA configuration file
 
 [ ca ]
-default_ca = CA_interm
+default_ca = CA_intermediate
 
-[ CA_interm ]
+[ CA_intermediate ]
 # Directory and file locations
 dir               = ~/pki/intermediate-ca
 certs             = $dir/certs
